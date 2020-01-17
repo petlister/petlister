@@ -1,12 +1,14 @@
-USE adlister_db;
+USE petlister_db;
 
 DROP TABLE IF EXISTS ads;
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS catergories;
+DROP TABLE IF EXISTS ad_category;
 
 CREATE TABLE users (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    username VARCHAR(240) NOT NULL,
-    email VARCHAR(240) NOT NULL,
+    username VARCHAR(32) NOT NULL,
+    email VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
@@ -14,9 +16,23 @@ CREATE TABLE users (
 CREATE TABLE ads (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id INT UNSIGNED NOT NULL,
-    title VARCHAR(240) NOT NULL,
+    title VARCHAR(100) NOT NULL,
     description TEXT NOT NULL,
+    image VARCHAR(200) NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users(id)
         ON DELETE CASCADE
 );
+
+CREATE TABLE categories (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(25) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE ad_category (
+    ad_id INT UNSIGNED NOT NULL,
+    category_id INT UNSIGNED NOT NULL,
+    FOREIGN KEY (ad_id) REFERENCES ads (id),
+    FOREIGN KEY (category_id) REFERENCES categories (id)
+)
