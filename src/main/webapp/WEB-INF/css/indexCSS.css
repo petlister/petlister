@@ -1,17 +1,12 @@
-/*.navbar-brand{*/
-    /*background-image: url("img/bird1.jpeg");*/
-/*}*/
-
-
-
 
 .navbar{
-    background-color:rgb(228,129,131);
-
+    /*background-color:rgb(228,129,131);*/
+background-color: transparent;
 }
 
 .navbar-item {
-    background-color: rgb(228,129,131) !important;
+    /*background-color: rgb(228,129,131) !important;*/
+    background-color: transparent !important;
     font-weight: bold;
     color: white;
     transition: color  .5s;
@@ -19,3 +14,23 @@
 
 
 
+body {
+    background: url("../../images_container/img/Good-Pet-Owner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#landing-page-heading{
+    margin-top: 20px;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: mediumaquamarine;
+
+}
+
+.transparent{
+    background:rgba(255,255,255,0.5);
+}

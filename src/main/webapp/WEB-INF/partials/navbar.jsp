@@ -12,11 +12,7 @@
     <%--</div><!-- /.container-fluid -->--%>
 <%--</nav>--%>
 <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <%--<a class="navbar-item" href="https://bulma.io">--%><%--make this a link to the homepage instead of bulma io --%>
-        <img  src= "../../images_container/img/petlisterlogo.png" width="50" height="50"/>
 
-    </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">

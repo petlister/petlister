@@ -6,16 +6,17 @@
         <jsp:param name="title" value="Welcome to my site!" />
     </jsp:include>
     <style><%@include file="/WEB-INF/css/indexCSS.css"%></style>
+    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 </head>
 <body>
-    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-    <div class="container">
+
+
     <div>
-        <h1>PETLISTER</h1>
+        <h1 class="transparent" id="landing-page-heading">PETLISTER</h1>
         <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
     </div>
+
     </div>
 </body>
 </html>
