@@ -3,11 +3,19 @@
 /*}*/
 
 
-#logo{
-    /*background-image: url("../css/img/petlisterlogo.png");*/
-}
+
 
 .navbar{
     background-color:rgb(228,129,131);
 
 }
+
+.navbar-item {
+    background-color: rgb(228,129,131) !important;
+    font-weight: bold;
+    color: white;
+    transition: color  .5s;
+}
+
+
+
