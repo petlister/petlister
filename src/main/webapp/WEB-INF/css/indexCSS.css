@@ -1,8 +1,13 @@
-.jumbotron{
-    background-image: url("img/Good-Pet-Owner.jpg") !important;
-    /*background-size: cover;*/
-    /*background-color: red !important;*/
+/*.navbar-brand{*/
+    /*background-image: url("img/bird1.jpeg");*/
+/*}*/
 
+
+#logo{
+    /*background-image: url("../css/img/petlisterlogo.png");*/
 }
 
+.navbar{
+    background-color:rgb(228,129,131);
 
+}
