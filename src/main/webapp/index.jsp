@@ -13,7 +13,7 @@
 
     <div>
         <h1 class="transparent" id="landing-page-heading">PETLISTER</h1>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h3 id="subheader">A helpful resource to find your perfect furry, scaled, or feathered new friend</h3>
 
     </div>
 
