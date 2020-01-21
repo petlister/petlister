@@ -10,13 +10,20 @@
 </head>
 <body>
 
-
-    <div>
+<section class="section">
+    <div class="container">
         <h1 class="transparent" id="landing-page-heading">PETLISTER</h1>
         <h3 id="subheader">A helpful resource to find your perfect furry, scaled, or feathered new friend</h3>
-
     </div>
+</section>
 
-    </div>
+
+    <%--<div id="main-background">--%>
+        <%--<h1 class="transparent" id="landing-page-heading">PETLISTER</h1>--%>
+        <%--<h3 id="subheader">A helpful resource to find your perfect furry, scaled, or feathered new friend</h3>--%>
+
+    <%--</div>--%>
+
+    <%--</div>--%>
 </body>
 </html>
