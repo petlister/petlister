@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet("/update-user")
+@WebServlet(name = "UpdateUserServlet", urlPatterns = "/update-user")
 public class UpdateUserServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -25,7 +25,13 @@ public class UpdateUserServlet extends HttpServlet {
         String passwordConfirmation = request.getParameter("confirm_password");
         Long id = Long.valueOf(request.getParameter("id"));
 
+        try {
+            User user = new User(id, username, email, password);
+            DaoFactory.getUsersDao().update(user);
+            request.getSession().setAttribute("user", user);
+        }catch (Exception e){
 
+        }
 
         boolean inputHasErrors = username.isEmpty()
                 || email.isEmpty()
@@ -37,10 +43,9 @@ public class UpdateUserServlet extends HttpServlet {
             return;
         }
 
-
-        User user = new User(id, username, email, password);
-        DaoFactory.getUsersDao().update(user);
+        User updatedUser = DaoFactory.getUsersDao().findByUsername(username);
+        request.getSession().removeAttribute("user");
+        request.getSession().setAttribute("user", updatedUser);
         response.sendRedirect("/profile");
-
     }
 }
