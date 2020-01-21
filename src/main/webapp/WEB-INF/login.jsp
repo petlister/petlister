@@ -11,10 +11,9 @@
 
 
     <section class="hero is-fullheight section2">
-        <div class="hero-body">
+        <div class="hero-body login-box">
             <div class="container">
-                <div class="columns is-centered">
-                    <%--<div class="column is-5-tablet is-4-desktop is-3-widescreen">--%>
+                <div class="columns is-centered transparent" id="login-box">
                         <form action="" class="box">
                             <div class="field">
                                 <label class="label">Email</label>
