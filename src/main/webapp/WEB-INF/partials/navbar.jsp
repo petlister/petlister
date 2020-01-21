@@ -16,21 +16,21 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item">
+            <a class="navbar-item" href="/index.jsp">
                 HOME
             </a>
 
-            <a class="navbar-item">
+            <a class="navbar-item" href="/profile">
                 PROFILE
             </a>
 
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="/ads/create">
                       POST
                     </a>
 
 
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="/ads">
                     VIEW ALL PETS
                 </a>
 
@@ -48,10 +48,10 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a href="/register" class="button is-primary">
                             <strong>Sign up</strong>
                         </a>
-                        <a class="button is-light">
+                        <a class="button is-light" href="/login">
                             Log in
                         </a>
                     </div>
