@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
 @WebServlet(name = "UpdateUserServlet", urlPatterns = "/update")
 public class UpdateUserServlet extends HttpServlet {
 
@@ -25,6 +26,7 @@ public class UpdateUserServlet extends HttpServlet {
         long longId = Long.parseLong(request.getParameter("id"));
 
 
+        
         if (request.getParameter("username") != null && request.getParameter("email") != null && request.getParameterValues("password") != null) {
 
             User user = new User(

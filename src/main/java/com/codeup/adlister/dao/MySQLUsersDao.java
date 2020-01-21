@@ -63,11 +63,14 @@ public class MySQLUsersDao implements Users {
             stmt.setLong(4, user.getId());
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
+//            if (rs.next()) {
+//                return rs.getLong(1);
+//            }
             rs.next();
-            return rs.getLong(1);
         } catch (SQLException e) {
             throw new RuntimeException("Error editing user", e);
         }
+        return null;
     }
 
     private User extractUser(ResultSet rs) throws SQLException {

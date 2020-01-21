@@ -14,14 +14,16 @@
 <jsp:include page="../partials/navbar.jsp" />
 <div class="container">
     <h1>Please update your information.</h1>
+    <p class="text-danger">${sessionScope.error}</p>
     <form action="/update" method="post">
         <div class="form-group">
             <label for="username">Username</label>
-            <input id="username" name="username" class="form-control" type="text">
+            <input id="username" name="username" class="form-control" type="text" value="${user.username}">
         </div>
+        <input type="hidden" name="id" value="${user.id}">
         <div class="form-group">
             <label for="email">Email</label>
-            <input id="email" name="email" class="form-control" type="text">
+            <input id="email" name="email" class="form-control" type="text" value="${user.email}">
         </div>
         <div class="form-group">
             <label for="password">New Password</label>
