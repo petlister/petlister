@@ -9,4 +9,9 @@ public interface Ads {
     List<Ad> all();
     // insert a new ad and return the new ad's id
     Long insert(Ad ad);
+    // locate specific ad by id
+    Ad findAdById(long id);
+
+    void updateAd(Ad ad);
+
 }
