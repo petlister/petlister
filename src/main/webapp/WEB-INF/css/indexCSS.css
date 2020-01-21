@@ -6,7 +6,7 @@
 }
 
 .navbar-item {
-    /*margin-left: 8%;*/
+
     background-color: transparent !important;
     font-weight: bold;
     color: white;
@@ -78,4 +78,8 @@ body {
 
 .search-bar:hover {
     opacity: 100%;
+}
+
+#logout-button{
+    margin-right: 10px;
 }

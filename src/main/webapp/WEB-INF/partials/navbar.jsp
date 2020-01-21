@@ -1,16 +1,4 @@
-<%--<nav class="navbar navbar-default">--%>
-    <%--<div class="container-fluid">--%>
-        <%--<!-- Brand and toggle get grouped for better mobile display -->--%>
-        <%--<div class="navbar-header">--%>
-            <%--<a class="navbar-brand" href="/ads">Adlister</a>--%>
-        <%--</div>--%>
-        <%--<ul class="nav navbar-nav navbar-right">--%>
-            <%--<li><a href="/login">Login</a></li>--%>
-            <%--<li><a href="/logout">Logout</a></li>--%>
-        <%--</ul>--%>
-    <%--</div><!-- /.navbar-collapse -->--%>
-    <%--</div><!-- /.container-fluid -->--%>
-<%--</nav>--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <nav class="navbar" role="navigation" aria-label="main navigation">
 
 
@@ -38,13 +26,7 @@
         </div>
 
 
-    <c:choose>
-        <c:when test = "${sessionScope.userId != null}">
-            <%--<li><p><a href="/profile"><i class="fas fa-user"></i></a></p></li>--%>
-            <%--<li><p><a href="/logout"><i class="fas fa-sign-out-alt"></i></a></p></li>--%>
-        </c:when>
-
-        <c:when test = "${sessionScope.userId == null}">
+<c:if test="${sessionScope.user == null}">
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
@@ -57,8 +39,16 @@
                     </div>
                 </div>
             </div>
-        </c:when>
-    </c:choose>
+</c:if>
+
+    <c:if test="${sessionScope.user != null}">
+    <div class="buttons">
+            <a href="/logout" class="button is-primary" id="logout-button">
+                <strong>Logout</strong>
+            </a>
+
+
+    </c:if>
         <%--<div class="navbar-end">--%>
             <%--<div class="navbar-item">--%>
                 <%--<div class="buttons">--%>
