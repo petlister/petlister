@@ -4,30 +4,72 @@
     <jsp:include page="partials/head.jsp">
         <jsp:param name="title" value="Register For Our Site!" />
     </jsp:include>
+    <jsp:include page="partials/navbar.jsp" />
 </head>
 <body>
-    <jsp:include page="partials/navbar.jsp" />
-    <div class="container">
-        <h1>Please fill in your information.</h1>
-        <form action="/register" method="post">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input id="username" name="username" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" name="email" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input id="password" name="password" class="form-control" type="password">
-            </div>
-            <div class="form-group">
-                <label for="confirm_password">Confirm Password</label>
-                <input id="confirm_password" name="confirm_password" class="form-control" type="password">
-            </div>
-            <input type="submit" class="btn btn-primary btn-block">
-        </form>
+
+
+
+<section class=" hero is-fullheight section3">
+    <div id="login-box2" class="transparent">
+    <form action="/register" method="post">
+    <div class="field">
+            <label for="username">Username</label>
+            <div class="control has-icons-left has-icons-right">
+            <input id="username" name="username" class="form-control input is-success" type="text" placeholder="e.g. codeup" required>
+            <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+            <span class="icon is-small is-right">
+      <i class="fas fa-check"></i>
+    </span>
+        </div>
+        <%--<p class="help is-success">This username is available</p>--%>
+    <%--</div>--%>
+
+
+
+    <div class="field">
+        <label class="label" for="email">Email</label>
+        <div class="control has-icons-left has-icons-right">
+            <input id="email" name="email" class="form-control input is-success" type="email" placeholder="codeup@gmail.com" required>
+            <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+
+        </div>
     </div>
+    <div class="field">
+        <label for="password" class="label">Password</label>
+        <div class="control has-icons-left">
+            <input id="password" name="password" type="password" placeholder="*******" class="input" required>
+            <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+        </div>
+    </div>
+    <div class="field">
+        <label for="password" class="label">Confirm Password</label>
+        <div class="control has-icons-left">
+            <input id="password2" name="password" type="password" placeholder="*******" class="input" required>
+            <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+        </div>
+    </div>
+    </form>
+
+    <div class="field is-grouped">
+        <div class="control">
+            <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+
 </body>
 </html>
