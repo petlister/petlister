@@ -50,7 +50,6 @@
                                     Login
                                 </button>
                             </div>
-                            <p class="login-nav"><a href="/index.jsp"><< Go back</a> | <a href="/register">Register</a></p>
                         </form>
                     </div>
                 </div>
