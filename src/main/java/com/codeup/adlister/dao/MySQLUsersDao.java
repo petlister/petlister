@@ -82,4 +82,20 @@ public class MySQLUsersDao implements Users {
         );
     }
 
+    public User findUserById(long id) {
+        PreparedStatement ps = null;
+        try {
+            String insertQuery = "SELECT * FROM users WHERE id = ?";
+            ps = connection.prepareStatement(insertQuery);
+            ps.setLong(1, id);
+            ResultSet rs = ps.executeQuery();
+            if (!rs.next()) {
+                return null;
+            }
+            return extractUser(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error retrieving current user.", e);
+        }
+    }
+
 }
