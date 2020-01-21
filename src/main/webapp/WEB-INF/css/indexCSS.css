@@ -26,8 +26,9 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 90%;
+    height: 110%;
     margin-top: -5%;
+
 }
 
 .section2 {
@@ -58,6 +59,7 @@ body {
     margin-right: 450px;
 
 }
+
 #subheader{
     margin-top: 20px;
     font-size: 30px;
@@ -67,8 +69,13 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-form {
-    background-repeat: no-repeat;
-    background-size: 100% 10px;
 
+.search-bar{
+    margin-left: 35%;
+    width: 500px;
+    opacity: 75%;
+}
+
+.search-bar:hover {
+    opacity: 100%;
 }

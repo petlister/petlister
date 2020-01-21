@@ -38,19 +38,39 @@
         </div>
 
 
+    <c:choose>
+        <c:when test = "${sessionScope.userId != null}">
+            <%--<li><p><a href="/profile"><i class="fas fa-user"></i></a></p></li>--%>
+            <%--<li><p><a href="/logout"><i class="fas fa-sign-out-alt"></i></a></p></li>--%>
+        </c:when>
 
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
-                    </a>
+        <c:when test = "${sessionScope.userId == null}">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </c:when>
+    </c:choose>
+        <%--<div class="navbar-end">--%>
+            <%--<div class="navbar-item">--%>
+                <%--<div class="buttons">--%>
+                    <%--<a class="button is-primary">--%>
+                        <%--<strong>Sign up</strong>--%>
+                    <%--</a>--%>
+                    <%--<a class="button is-light">--%>
+                        <%--Log in--%>
+                    <%--</a>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
     </div>
 </nav>
 

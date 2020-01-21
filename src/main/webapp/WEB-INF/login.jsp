@@ -16,12 +16,17 @@
                 <div class="columns is-centered transparent" id="login-box">
                         <form action="" class="box">
                             <div class="field">
-                                <label class="label">Email</label>
+                                <label class="label">Username</label>
                                 <div class="control has-icons-left">
-                                    <input type="email" placeholder="e.g. codeup@gmail.com" class="input" required>
+                                    <input class="input is-primary" type="text" placeholder="e.g. codeup">
                                     <span class="icon is-small is-left">
-                  <i class="fa fa-envelope"></i>
-                </span>
+      <i class="fas fa-user"></i>
+    </span>
+
+                                <%--<input type="email" placeholder="e.g. codeup@gmail.com" class="input" required>--%>
+                                    <%--<span class="icon is-small is-left">--%>
+                  <%--<i class="fa fa-envelope"></i>--%>
+                <%--</span>--%>
                                 </div>
                             </div>
                             <div class="field">
