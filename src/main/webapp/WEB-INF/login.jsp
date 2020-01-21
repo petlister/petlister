@@ -15,7 +15,7 @@
         <div class="hero-body login-box">
             <div class="container">
                 <div class="columns is-centered transparent" id="login-box">
-                        <form action="" class="box">
+                        <form action="/login" method="POST" class="box">
                             <div class="field">
                                 <label class="label">Username</label>
                                 <div class="control has-icons-left">
@@ -24,10 +24,7 @@
       <i class="fas fa-user"></i>
     </span>
 
-                                <%--<input type="email" placeholder="e.g. codeup@gmail.com" class="input" required>--%>
-                                    <%--<span class="icon is-small is-left">--%>
-                  <%--<i class="fa fa-envelope"></i>--%>
-                <%--</span>--%>
+
                                 </div>
                             </div>
                             <div class="field">

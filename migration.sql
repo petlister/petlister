@@ -2,7 +2,7 @@ USE petlister_db;
 
 DROP TABLE IF EXISTS ads;
 DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS catergories;
+DROP TABLE IF EXISTS categories;
 DROP TABLE IF EXISTS ad_category;
 
 CREATE TABLE users (
