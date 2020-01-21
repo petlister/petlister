@@ -5,18 +5,29 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Welcome to my site!" />
     </jsp:include>
-    <style><%@include file="/WEB-INF/css/indexCSS.css"%></style>
+    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 </head>
 <body>
-    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-    <div>
-        <h1>PETLISTER</h1>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
+
+<section class="section">
+    <div class="container">
+        <h1 class="transparent" id="landing-page-heading">PETLISTER</h1>
+        <h3 id="subheader">A helpful resource to find your perfect furry, scaled, or feathered new friend</h3>
     </div>
+
+    <div class="field search-bar">
+        <div class="control">
+            <div class="control has-icons-left">
+            <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
+            <span class="icon is-small is-left">
+                  <i class="fas fa-search"></i>
+            </span>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>

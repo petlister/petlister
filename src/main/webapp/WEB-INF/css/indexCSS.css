@@ -1,8 +1,81 @@
-.jumbotron{
-    background-image: url("img/Good-Pet-Owner.jpg") !important;
-    /*background-size: cover;*/
-    /*background-color: red !important;*/
+
+.navbar{
+    margin-left: 20px;
+
+    background-color: transparent;
+}
+
+.navbar-item {
+    /*margin-left: 8%;*/
+    background-color: transparent !important;
+    font-weight: bold;
+    color: white;
+    transition: color  .5s;
+}
+
+.navbar-item:hover{
+    color:mediumaquamarine !important;
+}
+
+body {
+    background-color: moccasin !important;
+}
+.section {
+    background: url("../../images_container/img/Good-Pet-Owner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 110%;
+    margin-top: -5%;
 
 }
 
+.section2 {
+    background: url("../../images_container/img/dog-owners.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 110%;
+    margin-top: -5%;
+}
 
+#landing-page-heading{
+    margin-top: 8%;
+    font-size: 150px;
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: mediumaquamarine;
+}
+
+.transparent{
+    background:rgba(255,255,255,0.5);
+}
+
+#login-box{
+    padding: 60px;
+    margin-left: 450px;
+    margin-right: 450px;
+
+}
+
+#subheader{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.search-bar{
+    margin-left: 35%;
+    width: 500px;
+    opacity: 75%;
+}
+
+.search-bar:hover {
+    opacity: 100%;
+}
