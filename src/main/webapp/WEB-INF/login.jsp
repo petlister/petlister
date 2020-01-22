@@ -17,10 +17,12 @@
                 <div class="columns is-centered transparent" id="login-box">
                         <form action="/login" method="POST" class="box">
                             <div class="field">
-                                <label class="label" for="username">Username</label>
+
+                                <label for="username" class="label">Username</label>
                                 <div class="control has-icons-left">
-                                    <input class="input is-primary" type="text" placeholder="e.g. codeup"
-                                           name="username" id="username">
+                                    <input id="username" name="username" class="input is-primary" type="text" placeholder="e.g. codeup">
+
+
                                     <span class="icon is-small is-left">
       <i class="fas fa-user"></i>
     </span>
@@ -29,10 +31,10 @@
                                 </div>
                             </div>
                             <div class="field">
-                                <label class="label" for="password">Password</label>
+
+                                <label for="password" class="label">Password</label>
                                 <div class="control has-icons-left">
-                                    <input type="password" placeholder="*******" class="input" required
-                                           name="password" id="password">
+                                    <input id="password" name="password" type="password" placeholder="*******" class="input is-primary" required>
                                     <span class="icon is-small is-left">
                   <i class="fa fa-lock"></i>
                 </span>
@@ -45,7 +47,7 @@
                                 </label>
                             </div>
                             <div class="field">
-                                <button class="button is-success">
+                                <button class="button is-primary">
                                     Login
                                 </button>
                             </div>
