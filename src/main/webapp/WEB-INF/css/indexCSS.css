@@ -165,4 +165,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+#create-ad-submit{
+    margin-top: 10px;
+}
+
+#create-ad-header{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
 }

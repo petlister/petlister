@@ -15,12 +15,12 @@
     <div class="container checkbox-card transparent">
         <div id="opaque-create-ad">
         <form action="/ads/create" method="post">
-        <h1>Create a new Pet Listing</h1>
+        <h1 id="create-ad-header">Create a New Pet Listing</h1>
 
         <div class="field">
             <label class="label " for="title">Title</label>
             <div class="control">
-                <input id="title" name="title"  class="input form-control is-primary" type="text" placeholder="Text input">
+                <input id="title" name="title"  class="input form-control is-primary" type="text" placeholder="e.g. In Search of a Fluffy Kitten">
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <div class="field">
                 <label class="label" for="description">Description</label>
                 <div class="control">
-                    <textarea class="textarea is-primary" placeholder="Textarea" id="description"></textarea>
+                    <textarea class="textarea is-primary" placeholder="e.g. I'm looking for a nice, fluffy kitten that has blue eyes and a bushy tail." id="description"></textarea>
                 </div>
             </div>
 
@@ -90,7 +90,7 @@
 
          <%--<input type="submit" class="btn btn-block btn-primary">--%>
 </div>
-            <input type="submit" class="btn btn-block btn-primary button is-primary">
+            <input type="submit" class="btn btn-block btn-primary button is-primary" id="create-ad-submit">
         </form>
     </div>
 
