@@ -25,15 +25,12 @@
         </div>
 
 
-
-
             <div class="field">
                 <label class="label" for="description">Description</label>
                 <div class="control">
-                    <textarea class="textarea is-primary" placeholder="e.g. I'm looking for a nice, fluffy kitten that has blue eyes and a bushy tail." id="description"></textarea>
+                    <textarea class="textarea is-primary" placeholder="e.g. I'm looking for a nice, fluffy kitten that has blue eyes and a bushy tail." id="description" name="description"></textarea>
                 </div>
             </div>
-
 
 
             <p>Please select applicable categories</p>

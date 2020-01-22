@@ -49,9 +49,9 @@
         </div>
     </div>
     <div class="field">
-        <label for="password" class="label">Confirm Password</label>
+        <label for="confirm_password" class="label">Confirm Password</label>
         <div class="control has-icons-left">
-            <input id="password2" name="password" type="password" placeholder="*******" class="input" required>
+            <input id="confirm_password" name="confirm_password" type="password" placeholder="*******" class="input" required>
             <span class="icon is-small is-left">
                   <i class="fa fa-lock"></i>
                 </span>
