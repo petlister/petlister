@@ -111,6 +111,7 @@ body {
 
 #subheader{
     margin-top: 20px;
+
     font-size: 30px;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -120,6 +121,7 @@ body {
 
 #subheader2 {
     margin-top: 100px;
+    margin-bottom: 15px;
     font-size: 50px;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -128,7 +130,9 @@ body {
     padding-left:100px;
 }
 .search-bar{
-    margin-left: 35%;
+
+
+    margin-left: 30%;
     width: 500px;
     opacity: 75%;
 }
@@ -138,6 +142,7 @@ body {
 }
 
 #search-bar{
+
     margin-top: 10px;
     margin-right: 5px;
 }
@@ -179,10 +184,33 @@ body {
 
 }
 
-.ad-card{
-    background-color: red;
+#ad-card{
+    background-color: white;
+    padding: 10px;
+    /*text-align: center;*/
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-weight: bold;*/
+}
+
+#card-border{
+    /*margin-top: 10px;*/
+    margin: auto;
+    padding: 15px;
+    width: 800px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
 }
 
 #test{
-    background-color: red;
+    /*color:red;*/
+    text-align: center;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+}
+
+#search-test{
+    margin-top: 10px;
+    margin-right: 10px;
 }

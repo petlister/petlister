@@ -15,19 +15,38 @@
         <h3 id="subheader">A helpful resource to find your perfect furry, scaled, or feathered new friend</h3>
     </div>
 
-    <div class="field search-bar" id="search-bar">
-        <div class="control">
-            <div class="control has-icons-left">
-            <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
-            <span class="icon is-small is-left">
-                  <i class="fas fa-search"></i>
-            </span>
 
+
+    <div class="field has-addons">
+        <div class="control field search-bar" id="search-bar">
+            <div class="control">
+                <div class="control has-icons-left">
+            <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
+                    <span class="icon is-small is-left">
+                  <i class="fas fa-search"></i>
+
+            </span>
+                </div>
 
             </div>
         </div>
+        <div class="control">
+            <button class="button is-primary" id="search-test" >
+                Search
+            </button>
+        </div>
     </div>
-</section>
+
+
+
+
+
+
+
+
+
+    <%--<button class="button is-primary" id="search-test">Search</button>--%>
+    </di
 
 </body>
 </html>
