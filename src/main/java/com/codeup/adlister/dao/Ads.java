@@ -14,4 +14,6 @@ public interface Ads {
 
     void updateAd(Ad ad);
 
+    List<Ad> searchedAds(String string);
+
 }

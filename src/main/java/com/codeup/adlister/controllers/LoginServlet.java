@@ -31,6 +31,8 @@ public class LoginServlet extends HttpServlet {
             return;
         }
 
+        String pass = Password.hash(password);
+
         boolean validAttempt = Password.check(password, user.getPassword());
 
         if (validAttempt) {
