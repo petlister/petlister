@@ -46,3 +46,4 @@ VALUES ('free'),
        ('bird'),
        ('reptile'),
        ('other');
+

@@ -3,7 +3,6 @@ package com.codeup.adlister.dao;
 import com.codeup.adlister.models.User;
 import com.codeup.adlister.util.Password;
 import com.mysql.cj.jdbc.Driver;
-
 import java.sql.*;
 
 public class MySQLUsersDao implements Users {
@@ -21,7 +20,6 @@ public class MySQLUsersDao implements Users {
             throw new RuntimeException("Error connecting to the database!", e);
         }
     }
-
 
     @Override
     public User findByUsername(String username) {
@@ -63,9 +61,7 @@ public class MySQLUsersDao implements Users {
             stmt.setLong(4, user.getId());
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
-//            if (rs.next()) {
-//                return rs.getLong(1);
-//            }
+
             rs.next();
         } catch (SQLException e) {
             throw new RuntimeException("Error editing user", e);

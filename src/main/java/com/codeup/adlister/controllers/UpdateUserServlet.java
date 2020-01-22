@@ -2,7 +2,6 @@ package com.codeup.adlister.controllers;
 
 import com.codeup.adlister.dao.DaoFactory;
 import com.codeup.adlister.models.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,13 +19,8 @@ public class UpdateUserServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-//        String username = request.getParameter("username");
-//        String email = request.getParameter("email");
-//        String password = request.getParameter("password");
         long longId = Long.parseLong(request.getParameter("id"));
 
-
-        
         if (request.getParameter("username") != null && request.getParameter("email") != null && request.getParameterValues("password") != null) {
 
             User user = new User(
@@ -38,12 +32,9 @@ public class UpdateUserServlet extends HttpServlet {
 
             DaoFactory.getUsersDao().update(user);
             User updatedUser = DaoFactory.getUsersDao().findUserById(longId);
-//            request.getSession().removeAttribute("user");
             request.getSession().setAttribute("user", updatedUser);
             response.sendRedirect("/profile");
-
             request.getSession().setAttribute("error", null);
-
 
         } else {
             request.getSession().setAttribute("error", "Please fill in all of the fields required");

@@ -20,7 +20,7 @@
             <label for="username">Username</label>
             <input id="username" name="username" class="form-control" type="text" value="${user.username}">
         </div>
-        <input type="hidden" name="id" value="${user.id}">
+        <%--<input type="hidden" name="id" value="${user.id}">--%>
         <div class="form-group">
             <label for="email">Email</label>
             <input id="email" name="email" class="form-control" type="text" value="${user.email}">
@@ -34,6 +34,7 @@
             <input id="confirm_password" name="confirm_password" class="form-control" type="password">
         </div>
         <input type="submit" class="btn btn-primary btn-block">
+        <input id="id" type="hidden" name="id" value="${sessionScope.user.id}">
     </form>
 </div>
 
