@@ -8,10 +8,14 @@
 
 </head>
 <body>
+
 <section class="section5 hero-body is-fullheight">
-    <div class="container">
+
+    <div class="checkbox-card">
+    <div class="container checkbox-card transparent">
         <form action="/ads/create" method="post">
         <h1>Create a new Pet Listing</h1>
+
         <div class="field">
             <label class="label" for="title">Title</label>
             <div class="control">
@@ -32,7 +36,8 @@
 
 
             <p>Please select applicable categories</p>
-            <div class="form-check form-check-inline">
+<div id="checkbox-create-ad">
+            <div class="form-check form-check-inline" >
                 <input class="form-check-input checkbox styled" type="checkbox" name="categoryCheckbox" id="free" value="1">
                 <label class="form-check-label checkbox" for="free">free</label>
             </div>
@@ -81,9 +86,16 @@
             </div>
 
 
+            <%--<input type="submit" class="btn btn-block btn-primary">--%>
+</div>
             <input type="submit" class="btn btn-block btn-primary">
         </form>
+
+
+
+    </div>
     </div>
 </section>
+
 </body>
 </html>

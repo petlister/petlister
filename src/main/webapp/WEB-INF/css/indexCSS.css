@@ -145,3 +145,20 @@ body {
 #logout-button{
     margin-right: 10px;
 }
+
+.checkbox-card{
+    padding: 80px;
+    /*margin-top: 200px;*/
+    /*margin-left: 450px;*/
+    /*margin-right: 450px;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+#checkbox-create-ad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
