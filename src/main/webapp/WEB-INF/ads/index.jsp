@@ -8,7 +8,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-
+<section class="section6 hero-body is-fullheight">
 <div class="container">
     <h1>Here Are all the ads!</h1>
 
@@ -20,6 +20,6 @@
         </div>
     </c:forEach>
 </div>
-
+</section>
 </body>
 </html>

@@ -42,6 +42,18 @@
 </c:if>
 
     <c:if test="${sessionScope.user != null}">
+    <div class="field search-bar" id="search-bar">
+        <div class="control">
+            <div class="control has-icons-left">
+                <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-search"></i>
+            </span>
+
+
+            </div>
+        </div>
+    </div>
     <div class="buttons">
             <a href="/logout" class="button is-primary" id="logout-button">
                 <strong>Logout</strong>

@@ -7,9 +7,14 @@
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 </head>
 <body>
-<section class="hero is-fullheight section4">
+
+
+<section class="section4 hero-body is-fullheight">
     <div class="container">
-        <h1 id="subheader2">Welcome, ${sessionScope.user.username}!</h1>
+
+    <div class="container">
+        <h1 class="transparent" id="subheader2">Welcome, ${sessionScope.user.username}!</h1>
+    </div>
     </div>
 </section>
 </body>
