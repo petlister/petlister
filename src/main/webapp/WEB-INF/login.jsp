@@ -17,9 +17,10 @@
                 <div class="columns is-centered transparent" id="login-box">
                         <form action="/login" method="POST" class="box">
                             <div class="field">
-                                <label class="label">Username</label>
+                                <label class="label" for="username">Username</label>
                                 <div class="control has-icons-left">
-                                    <input class="input is-primary" type="text" placeholder="e.g. codeup">
+                                    <input class="input is-primary" type="text" placeholder="e.g. codeup"
+                                           name="username" id="username">
                                     <span class="icon is-small is-left">
       <i class="fas fa-user"></i>
     </span>
@@ -28,9 +29,10 @@
                                 </div>
                             </div>
                             <div class="field">
-                                <label class="label">Password</label>
+                                <label class="label" for="password">Password</label>
                                 <div class="control has-icons-left">
-                                    <input type="password" placeholder="*******" class="input" required>
+                                    <input type="password" placeholder="*******" class="input" required
+                                           name="password" id="password">
                                     <span class="icon is-small is-left">
                   <i class="fa fa-lock"></i>
                 </span>
