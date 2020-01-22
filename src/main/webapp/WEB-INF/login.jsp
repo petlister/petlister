@@ -30,7 +30,7 @@
                             <div class="field">
                                 <label for="password" class="label">Password</label>
                                 <div class="control has-icons-left">
-                                    <input id="password" name="password" type="password" placeholder="*******" class="input" required>
+                                    <input id="password" name="password" type="password" placeholder="*******" class="input is-primary" required>
                                     <span class="icon is-small is-left">
                   <i class="fa fa-lock"></i>
                 </span>
@@ -43,7 +43,7 @@
                                 </label>
                             </div>
                             <div class="field">
-                                <button class="button is-success">
+                                <button class="button is-primary">
                                     Login
                                 </button>
                             </div>

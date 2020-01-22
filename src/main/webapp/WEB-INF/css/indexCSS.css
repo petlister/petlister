@@ -147,14 +147,18 @@ body {
 }
 
 .checkbox-card{
+    margin: auto;
     padding: 80px;
-    /*margin-top: 200px;*/
-    /*margin-left: 450px;*/
-    /*margin-right: 450px;*/
+    width: 800px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 
+}
+
+#opaque-create-ad{
+    padding: 10px;
+    background-color: white;
 }
 
 #checkbox-create-ad{

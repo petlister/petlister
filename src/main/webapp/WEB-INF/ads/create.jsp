@@ -13,13 +13,14 @@
 
     <div class="checkbox-card">
     <div class="container checkbox-card transparent">
+        <div id="opaque-create-ad">
         <form action="/ads/create" method="post">
         <h1>Create a new Pet Listing</h1>
 
         <div class="field">
-            <label class="label" for="title">Title</label>
+            <label class="label " for="title">Title</label>
             <div class="control">
-                <input id="title" name="title"  class="input form-control" type="text" placeholder="Text input">
+                <input id="title" name="title"  class="input form-control is-primary" type="text" placeholder="Text input">
             </div>
         </div>
 
@@ -29,7 +30,7 @@
             <div class="field">
                 <label class="label" for="description">Description</label>
                 <div class="control">
-                    <textarea class="textarea" placeholder="Textarea" id="description"></textarea>
+                    <textarea class="textarea is-primary" placeholder="Textarea" id="description"></textarea>
                 </div>
             </div>
 
@@ -37,8 +38,9 @@
 
             <p>Please select applicable categories</p>
 <div id="checkbox-create-ad">
+
             <div class="form-check form-check-inline" >
-                <input class="form-check-input checkbox styled" type="checkbox" name="categoryCheckbox" id="free" value="1">
+                <input class="form-check-input checkbox styled is-primary" type="checkbox" name="categoryCheckbox" id="free" value="1">
                 <label class="form-check-label checkbox" for="free">free</label>
             </div>
 
@@ -86,11 +88,11 @@
             </div>
 
 
-            <%--<input type="submit" class="btn btn-block btn-primary">--%>
+         <%--<input type="submit" class="btn btn-block btn-primary">--%>
 </div>
-            <input type="submit" class="btn btn-block btn-primary">
+            <input type="submit" class="btn btn-block btn-primary button is-primary">
         </form>
-
+    </div>
 
 
     </div>
