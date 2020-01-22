@@ -15,7 +15,7 @@
         <h3 id="subheader">A helpful resource to find your perfect furry, scaled, or feathered new friend</h3>
     </div>
 
-    <div class="field search-bar">
+    <div class="field search-bar" id="search-bar">
         <div class="control">
             <div class="control has-icons-left">
             <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
