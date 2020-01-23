@@ -48,4 +48,5 @@ VALUES ('free'),
        ('other');
 
 
-SELECT * FROM ads WHERE title LIKE '%bird%' OR description LIKE '%bird%';
+# SELECT * FROM ads WHERE title LIKE '%bird%' OR description LIKE '%bird%'
+SELECT * FROM ads JOIN users ON ads.user_id = users.id WHERE users.id=2;
