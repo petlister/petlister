@@ -16,7 +16,7 @@ public class SearchAdsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException,
             ServletException {
 
-        String searchKeyword = request.getParameter("search-bar");
+        String searchKeyword = request.getParameter("searching");
         request.setAttribute("ads", DaoFactory.getAdsDao().searchedAds(searchKeyword));
 
         System.out.println("searchTerm = " + searchKeyword);
