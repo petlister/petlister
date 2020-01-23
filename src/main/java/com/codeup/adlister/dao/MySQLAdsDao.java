@@ -123,6 +123,20 @@ public class MySQLAdsDao implements Ads {
         return null;
     }
 
+    @Override
+    public Long delete(Long id) {
+        try{
+            String deleteQuery = "DELETE FROM ads WHERE id = ?";
+            PreparedStatement ps = connection.prepareStatement(deleteQuery);
+            ps.setLong(1, id);
+            ps.executeUpdate();
+            return Long.valueOf(2);
+        } catch (SQLException e){
+            throw new RuntimeException("Error deleting ad");
+        }
+
+}
+
     public Ad findAdById(long id) {
         PreparedStatement ps = null;
         try {
