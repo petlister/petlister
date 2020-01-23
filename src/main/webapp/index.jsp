@@ -17,11 +17,11 @@
 
 
     <c:if test="${sessionScope.user == null}">
-    <div class="field has-addons">
+    <form class="field has-addons" action="/ads/search" role="search">
         <div class="control field search-bar" id="search-bar">
             <div class="control">
                 <div class="control has-icons-left">
-                    <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
+                    <input id="searching" name="searching" class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
                     <span class="icon is-small is-left">
                   <i class="fas fa-search"></i>
 
@@ -35,7 +35,7 @@
                 Search
             </button>
         </div>
-    </div>
+    </form>
 
     </c:if>
 

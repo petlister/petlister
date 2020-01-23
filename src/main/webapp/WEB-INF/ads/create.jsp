@@ -74,13 +74,13 @@
 
 
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="categoryCheckbox" id="reptile" value="6">
+                <input class="form-check-input" type="checkbox" name="categoryCheckbox" id="reptile" value="7">
                 <label class="form-check-label" for="reptile">reptile</label>
             </div>
 
 
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="categoryCheckbox" id="other" value="6">
+                <input class="form-check-input" type="checkbox" name="categoryCheckbox" id="other" value="8">
                 <label class="form-check-label" for="other">other</label>
             </div>
 

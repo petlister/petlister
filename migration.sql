@@ -47,3 +47,5 @@ VALUES ('free'),
        ('reptile'),
        ('other');
 
+
+SELECT * FROM ads WHERE title LIKE '%bird%' OR description LIKE '%bird%';
