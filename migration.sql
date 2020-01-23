@@ -32,7 +32,7 @@ CREATE TABLE categories (
 CREATE TABLE ad_category (
     ad_id INT UNSIGNED NOT NULL,
     category_id INT UNSIGNED NOT NULL,
-    FOREIGN KEY (ad_id) REFERENCES ads (id),
+    FOREIGN KEY (ad_id) REFERENCES ads (id) ON DELETE CASCADE,
     FOREIGN KEY (category_id) REFERENCES categories (id)
 );
 
@@ -47,3 +47,5 @@ VALUES ('free'),
        ('reptile'),
        ('other');
 
+
+SELECT * FROM ads WHERE title LIKE '%bird%' OR description LIKE '%bird%';
