@@ -13,7 +13,8 @@ import java.io.IOException;
 @WebServlet(name = "SearchAdsServlet", urlPatterns = "/ads/search")
 public class SearchAdsServlet extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException,
+            ServletException {
 
         String searchKeyword = request.getParameter("search-bar");
         request.setAttribute("ads", DaoFactory.getAdsDao().searchedAds(searchKeyword));

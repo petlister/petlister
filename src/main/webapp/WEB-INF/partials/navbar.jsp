@@ -48,9 +48,7 @@
                 <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
                 <span class="icon is-small is-left">
                   <i class="fas fa-search"></i>
-            </span>
-
-
+                    </span>
             </div>
         </div>
     </div>
