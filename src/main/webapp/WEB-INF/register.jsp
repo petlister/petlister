@@ -15,7 +15,7 @@
     <form action="/register" method="post">
 
     <div class="field">
-            <label class="label username">Username</label>
+            <label class="label username" for="username">Username</label>
             <div class="control has-icons-left has-icons-right">
             <input id="username" name="username" class="form-control input is-success" type="text" placeholder="e.g. codeup" required>
             <span class="icon is-small is-left">
@@ -58,16 +58,16 @@
         </div>
     </div>
     </div>
-    </form>
 
     <div class="field is-grouped">
         <div class="control">
-            <button class="button is-primary  ">Submit</button>
+            <button class="button is-primary">Submit</button>
         </div>
         <div class="control">
             <button class="button is-link is-light">Cancel</button>
         </div>
     </div>
+    </form>
     </div>
 </section>
 
