@@ -118,9 +118,8 @@ public class MySQLAdsDao implements Ads {
                 }
             return ads;
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Error searching ads", e);
         }
-        return null;
     }
 
     public Ad findAdById(long id) {

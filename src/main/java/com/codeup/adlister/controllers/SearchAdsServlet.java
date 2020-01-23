@@ -15,9 +15,12 @@ public class SearchAdsServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        String search = request.getParameter("search-bar");
+        String searchKeyword = request.getParameter("search-bar");
+        request.setAttribute("ads", DaoFactory.getAdsDao().searchedAds(searchKeyword));
 
+        System.out.println("searchTerm = " + searchKeyword);
+        System.out.println("Ads servlet doGet has been ran");
 
-
+        request.getRequestDispatcher("/WEB-INF/ads/search.jsp").forward(request,response);
     }
 }
