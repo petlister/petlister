@@ -136,6 +136,23 @@ public class MySQLAdsDao implements Ads {
 
 }
 
+
+    @Override
+    public List<Ad> userProfileAds(Long id){
+        PreparedStatement stmt = null;
+
+        try{
+            stmt = connection.prepareStatement("SELECT * FROM ads JOIN users ON ads.user_id = users.id WHERE users.id= ?");
+
+            stmt.setLong(1,id);
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e){
+            throw new RuntimeException("Error retrieving users ads", e);
+        }
+    }
+
+
     public Ad findAdById(long id) {
         PreparedStatement ps = null;
         try {
@@ -151,5 +168,7 @@ public class MySQLAdsDao implements Ads {
             throw new RuntimeException("Error retrieving current ad.", e);
         }
     }
+
+
 
 }
