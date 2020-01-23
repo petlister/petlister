@@ -13,8 +13,9 @@
 <section class=" hero is-fullheight section3">
     <div id="login-box2" class="transparent">
     <form action="/register" method="post">
+
     <div class="field">
-            <label for="username">Username</label>
+            <label class="label username">Username</label>
             <div class="control has-icons-left has-icons-right">
             <input id="username" name="username" class="form-control input is-success" type="text" placeholder="e.g. codeup" required>
             <span class="icon is-small is-left">
@@ -24,8 +25,7 @@
       <i class="fas fa-check"></i>
     </span>
         </div>
-        <%--<p class="help is-success">This username is available</p>--%>
-    <%--</div>--%>
+
 
 
 
@@ -57,11 +57,12 @@
                 </span>
         </div>
     </div>
+    </div>
     </form>
 
     <div class="field is-grouped">
         <div class="control">
-            <button class="button is-link">Submit</button>
+            <button class="button is-primary  ">Submit</button>
         </div>
         <div class="control">
             <button class="button is-link is-light">Cancel</button>
