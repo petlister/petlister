@@ -17,7 +17,7 @@
         <h1 class="transparent" id="subheader2">Welcome, ${sessionScope.user.username}!</h1>
         <c:forEach var="ad" items="${userAds}">
             <div id="card-border" class="transparent">
-                <div id="ad-card">
+                <div id="ad-card1">
                     <p><c:out value="${ad.title}"/></p>
                     <p>${ad.description}</p>
                     <p>${ad.categories}</p>

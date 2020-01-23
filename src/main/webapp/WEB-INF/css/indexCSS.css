@@ -90,6 +90,17 @@ body {
     margin-top: -5%;
 }
 
+.section8{
+    background: url("../../images_container/img/dog1.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 200%;
+    margin-top: -5%;
+}
+
+
 #landing-page-heading{
     margin-top: 8%;
     font-size: 150px;
@@ -199,11 +210,16 @@ body {
 #ad-card{
     background-color: white;
     padding: 10px;
-    /*text-align: center;*/
-    /*font-family: 'Lato', sans-serif;*/
-    /*font-weight: bold;*/
-}
 
+}
+#ad-card1{
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+
+}
 #card-border{
     /*margin-top: 10px;*/
     margin: auto;
