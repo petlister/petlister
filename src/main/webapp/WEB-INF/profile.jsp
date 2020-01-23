@@ -14,7 +14,6 @@
 
     <div class="container">
         <h1 class="transparent" id="subheader2">Welcome, ${sessionScope.user.username}!</h1>
-        <%--<input id="id" type="hidden" name="id" value="${sessionScope.ad.userId}">--%>
         <c:forEach var="ad" items="${ads}">
             <div id="card-border" class="transparent">
                 <div id="ad-card">
