@@ -9,13 +9,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <jsp:include page="/WEB-INF/partials/head.jsp">
+        <jsp:param name="title" value="Viewing All The Ads" />
+    </jsp:include>
+    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <title>Title</title>
 </head>
-<body>
-    <h1>Here are your search results:</h1>
+<body id="test">
+<section class="section7 hero-body is-fullheight">
+    <h1 id="subheader2" class="transparent">Here Are Your Search Results:</h1>
 
     <c:forEach var="ad" items="${ads}">
-
+    <div id="card-border" class="transparent">
         <div class="panel panel-info wid">
             <div class="panel-heading">
                 <h2 class="panel-title"><a href="/display?id=${ad.id}">${ad.title}</a> </h2>
@@ -28,6 +33,8 @@
         </div>
         <div class="col-md-6">
         </div>
+    </div>
     </c:forEach>
+</section>
 </body>
 </html>
