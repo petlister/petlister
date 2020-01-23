@@ -22,6 +22,7 @@
             <div class="control">
                 <div class="control has-icons-left">
                     <input id="searching" name="searching" class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
+
                     <span class="icon is-small is-left">
                   <i class="fas fa-search"></i>
 
@@ -31,10 +32,12 @@
             </div>
         </div>
         <div class="control">
-            <button class="button is-primary" id="search-test" >
+            <button type="submit" class="button is-primary" id="search-test">
                 Search
             </button>
         </div>
+
+
     </form>
 
     </c:if>
