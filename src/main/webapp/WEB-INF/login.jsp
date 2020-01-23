@@ -47,7 +47,7 @@
                                 </label>
                             </div>
                             <div class="field">
-                                <button class="button is-primary">
+                                <button class="button is-primary" type="submit">
                                     Login
                                 </button>
                             </div>

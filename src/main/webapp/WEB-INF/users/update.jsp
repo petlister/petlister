@@ -9,9 +9,14 @@
 <html>
 <head>
     <title>Title</title>
+    <jsp:include page="/WEB-INF/partials/head.jsp">
+        <jsp:param name="title" value="Edit Your Listing:" />
+    </jsp:include>
+    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+
 </head>
 <body>
-<jsp:include page="../partials/navbar.jsp" />
+<section class=" hero is-fullheight section10">
 <div class="container">
     <h1>Please update your information.</h1>
     <p class="text-danger">${sessionScope.error}</p>
@@ -37,6 +42,6 @@
         <input id="id" type="hidden" name="id" value="${sessionScope.user.id}">
     </form>
 </div>
-
+</section>
 </body>
 </html>
