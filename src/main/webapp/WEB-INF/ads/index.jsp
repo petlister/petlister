@@ -15,7 +15,7 @@
     <c:forEach var="ad" items="${ads}">
     <div id="card-border" class="transparent">
     <div id="ad-card">
-            <p>${ad.title}</p>
+        <h2 class="panel-title"><a href="/ads/display?id=${ad.id}">${ad.title}</a> </h2>
             <p>${ad.description}</p>
             <p>${ad.categories}</p>
         </div>
