@@ -22,6 +22,7 @@
             <div class="control">
                 <div class="control has-icons-left">
                     <input id="searching" name="searching" class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
+
                     <span class="icon is-small is-left">
                   <i class="fas fa-search"></i>
 
@@ -35,6 +36,7 @@
                 Search
             </button>
         </div>
+
     </form>
 
     </c:if>
