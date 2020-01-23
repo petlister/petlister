@@ -20,20 +20,13 @@
         <div class="row">
         <div class="col-md-8">
             <p>Posted by: ${user.username}</p>
-            <p>${ad.description}</p>
+            <p><strong>Description:</strong> ${ad.description}</p>
+            <p><strong>Categories:</strong> ${ad.categories}</p>
             <c:if test="${user.id == ad.userId}">
                 <a href="/ads/update?id=${ad.id}" class="btn btn-primary">Edit</a>
                 <a href="/ads/delete-ad?id=${ad.id}" class="btn btn-danger">Delete</a>
             </c:if>
             <br>
-            <c:if test="${!categories.isEmpty()}">
-                <strong>Categories: </strong>
-                <ul>
-                    <c:forEach var="category" items="${categories}">
-                        <li>${category.name}</li>
-                    </c:forEach>
-                </ul>
-            </c:if>
         </div>
 
 
