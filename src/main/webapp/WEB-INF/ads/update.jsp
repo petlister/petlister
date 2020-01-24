@@ -5,6 +5,7 @@
   Time: 4:51 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -23,7 +24,6 @@
         <div id="opaque-create-ad">
 
     <h1 id="create-ad-header">Edit Your Ad</h1>
-
     <p class="text-danger">${sessionScope.error}</p>
     <form action="/ads/update" method="post">
 
