@@ -284,7 +284,13 @@ body {
 }
 
 #edit_profile_icon{
+     color: mediumaquamarine;
+     margin-top: -25px;
+     margin-left: 98%;
+ }
+
+#delete_profile_icon{
     color: mediumaquamarine;
-    margin-top: 30px;
-    margin-left: 98%;
+    margin-top: 25px;
+    margin-left: 100%;
 }
