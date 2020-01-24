@@ -26,7 +26,7 @@
             <div id="card-border" class="transparent">
 
                 <div id="ad-card1">
-                    <p><c:out value="${ad.title}"/></p>
+                    <h2 class="panel-title"><a href="/ads/display?id=${ad.id}">${ad.title}</a> </h2>
 
 <!--                 <div id="ad-card">
                     <h2 class="panel-title"><a href="/ads/display?id=${ad.id}">${ad.title}</a> </h2> -->
