@@ -24,8 +24,13 @@
         <h1 class="transparent" id="subheader3"> Here's a List of All Your Ads</h1>
         <c:forEach var="ad" items="${userAds}">
             <div id="card-border" class="transparent">
+
                 <div id="ad-card1">
                     <p><c:out value="${ad.title}"/></p>
+
+<!--                 <div id="ad-card">
+                    <h2 class="panel-title"><a href="/ads/display?id=${ad.id}">${ad.title}</a> </h2> -->
+
                     <p>${ad.description}</p>
                     <p>${ad.categories}</p>
                 </div>
