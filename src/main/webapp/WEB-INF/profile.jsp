@@ -13,9 +13,11 @@
 <section class="section4 hero-body is-fullheight">
     <div class="container">
 
+        <a href="/profile/delete-user?id=${user.id}">
         <span class="icon is-right" id="delete_profile_icon">
         <i class="fas fa-trash-alt fa-lg"></i>
-    </span>
+        </span>
+        </a>
 
         <a href="/update">
  <span class="icon is-right" id="edit_profile_icon">
