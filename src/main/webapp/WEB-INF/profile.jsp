@@ -12,7 +12,13 @@
 
 <section class="section4 hero-body is-fullheight">
     <div class="container">
+        <a href="/update">
+ <span class="icon is-right" id="edit_profile_icon">
 
+      <i class="fas fa-user fa-2x"></i>
+
+                        </span>
+        </a>
     <div class="container">
         <h1 class="transparent" id="subheader2">Welcome, ${sessionScope.user.username}!</h1>
         <h1 class="transparent" id="subheader3"> Here's a List of All Your Ads</h1>
