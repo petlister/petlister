@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
@@ -16,7 +17,9 @@
         <div id="opaque-create-ad">
         <form action="/ads/create" method="post">
         <h1 id="create-ad-header">Create a New Pet Listing</h1>
-
+            <c:if test="${param.error==1}">
+                <h2 style="color: red; font-weight: bold; text-align: center">Error - Please make sure all fields are filled out!</h2>
+            </c:if>
         <div class="field" id="test">
             <label class="label " for="title">Title</label>
             <div class="control">
