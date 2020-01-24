@@ -42,16 +42,18 @@
 </c:if>
 
     <c:if test="${sessionScope.user != null}">
+    <form class="field has-addons" action="/ads/search" role="search" method="post">
     <div class="field search-bar" id="search-bar">
         <div class="control">
             <div class="control has-icons-left">
-                <input class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
+                <input id="searching" name="searching" class="input is-primary" type="text" placeholder="e.g. dog, cat, bird">
                 <span class="icon is-small is-left">
                   <i class="fas fa-search"></i>
-                    </span>
+                </span>
             </div>
         </div>
     </div>
+    </form>
     <div class="buttons">
             <a href="/logout" class="button is-primary" id="logout-button">
                 <strong>Logout</strong>

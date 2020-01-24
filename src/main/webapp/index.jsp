@@ -25,12 +25,11 @@
 
                     <span class="icon is-small is-left">
                   <i class="fas fa-search"></i>
-
             </span>
                 </div>
-
             </div>
         </div>
+
         <div class="control">
             <button type="submit" class="button is-primary" id="search-test">
                 Search
